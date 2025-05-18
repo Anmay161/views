@@ -20,7 +20,7 @@ class DetailPage extends StatelessWidget {
               item['img']!,
               height: 100,
               width: 100,
-              ),
+            ),
             SizedBox(height: 20),
             Text(
               item['title']!,

@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:views/gridview.dart';
 import 'package:views/listview.dart';
+import 'package:views/loginpage.dart';
+import 'package:views/registrationpage.dart';
 
 class Homepage extends StatelessWidget {
   const Homepage({super.key});
@@ -33,6 +35,26 @@ class Homepage extends StatelessWidget {
                 );
               },
               child: const Text('GridView'),
+            ),
+            const SizedBox(height: 20),
+            ElevatedButton(
+              onPressed: () {
+                Navigator.push(
+                  context, 
+                  MaterialPageRoute(builder: (context) => Loginpage())
+                );
+              },
+              child: const Text('LoginPage'),
+            ),
+            const SizedBox(height: 20),
+            ElevatedButton(
+              onPressed: () {
+                Navigator.push(
+                  context, 
+                  MaterialPageRoute(builder: (context) => Registrationpage())
+                );
+              },
+              child: const Text('RegistrationPage'),
             ),
           ],
         ),
